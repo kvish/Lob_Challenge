@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import request, render_template, redirect, url_for, redirect
+from flask import request, render_template, redirect, redirect
 import json
 import lob
 import urllib
@@ -30,8 +30,8 @@ def send():
 
 	if name == '' or address1 == '' or address2 == '' or city == '' or state == '' or zipcode == '':
 		return '<html><h1> Something is wrong with your request! make sure all fields are filled </h1></html>'
-	if letter == ''
-		return return '<html><h1> are you sure you want to send an empty letter? </h1></html>'
+	if letter == '':
+		return '<html><h1> are you sure you want to send an empty letter? </h1></html>'
 	#make api requests
 	google_api_key = 'AIzaSyBYMVzqlYJHnOgknV-vShJv4zq77aQQYBw'
 	lob.api_key = 'test_37e4de5759d46d675a12a7819f89fb08145'
