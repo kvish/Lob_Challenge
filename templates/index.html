@@ -1,12 +1,18 @@
 <html>
-	<head>
+		<h1><center> Lob Coding Challenge<center></h1>
+		<h2><center> Send a Letter to your Representative! </center></h2>
 
-		<title> Lob Coding Challenge! <title>
-	</head>
 
-	<body>
 
-		<h1> Send a Letter to your Representative </h1>
-	</body>
+		<center><form action = "/send" method = "post">
+			Name: <input type = "text" name = "name"> <br>
+			Address Line 1: <input type = "text" name = "address1"> <br>
+			Address Line 2: <input type = "text" name = "address2"> <br>
+			City: <input type = "text" name = "city"> <br>
+			State: <input type = "text" name = "state"> <br>
+			Zip: <input type = "text" name = "zip"> <br>
+			<textarea name="letter" rows=20 cols = 50 maxlength="200"></textarea><br>
+			<input type="submit" value="submit"></input>
+		</form></center>
 
 </html>
